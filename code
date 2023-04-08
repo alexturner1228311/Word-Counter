@@ -1,0 +1,5 @@
+filename = input("Enter file name: ")
+with open(filename, 'r') as file:
+    contents = file.read()
+    word_count = len(contents.split())
+print("Number of words in file: ", word_count)
